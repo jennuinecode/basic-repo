@@ -1,0 +1,158 @@
+Last login: Sat Sep 24 15:55:47 on ttys000
+Jennifers-MacBook-Pro:~ jennifercortes$ cd Desktop
+Jennifers-MacBook-Pro:Desktop jennifercortes$ ls
+CODING
+CODING DOJO
+FITNESS
+JENNUINE LIFE
+NATY & JENN
+PERSONAL
+~$Cruises.xlsx
+~$Current Expense Spreadsheet.xlsx
+~$Signature Meal Photogrpahy Checklist.xlsx
+~$Weekly Assignment Schedule.xlsx
+~$asurement Report Sheet for Lab.docx
+~$rtes_Mixed Strategies.docx
+~$rtes_macromolecules_report_sheet.docx
+~$ynoso, Elisa Meal Plan 10.01.2015.docx
+Jennifers-MacBook-Pro:Desktop jennifercortes$ cd CODING
+Jennifers-MacBook-Pro:CODING jennifercortes$ cd ..
+Jennifers-MacBook-Pro:Desktop jennifercortes$ cd CODING
+CODING/      CODING DOJO/ 
+Jennifers-MacBook-Pro:Desktop jennifercortes$ cd CODING
+CODING/      CODING DOJO/ 
+Jennifers-MacBook-Pro:Desktop jennifercortes$ cd CODING DOJO/
+Jennifers-MacBook-Pro:CODING jennifercortes$ ls
+Business Projects	LearningCode
+Learning		Single Projects
+Jennifers-MacBook-Pro:CODING jennifercortes$ cd ..
+Jennifers-MacBook-Pro:Desktop jennifercortes$ pwd
+/Users/jennifercortes/Desktop
+Jennifers-MacBook-Pro:Desktop jennifercortes$ cd CODING DOJO/
+Jennifers-MacBook-Pro:CODING jennifercortes$ pwd
+/Users/jennifercortes/Desktop/CODING
+Jennifers-MacBook-Pro:CODING jennifercortes$ ls
+Business Projects	LearningCode
+Learning		Single Projects
+Jennifers-MacBook-Pro:CODING jennifercortes$ cd ..
+Jennifers-MacBook-Pro:Desktop jennifercortes$ cd coding\ dojo/
+Jennifers-MacBook-Pro:coding dojo jennifercortes$ ls
+ASSIGNMENTS
+Screen Shot 2016-08-12 at 7.41.20 PM.png
+Screen Shot 2016-08-12 at 8.13.49 PM.png
+Jennifers-MacBook-Pro:coding dojo jennifercortes$ cd ASSIGNMENTS/
+Jennifers-MacBook-Pro:ASSIGNMENTS jennifercortes$ cd basic-repo/
+Jennifers-MacBook-Pro:basic-repo jennifercortes$ git init
+Initialized empty Git repository in /Users/jennifercortes/Desktop/coding dojo/ASSIGNMENTS/basic-repo/.git/
+Jennifers-MacBook-Pro:basic-repo jennifercortes$ git commit -m "new repo"
+On branch master
+
+Initial commit
+
+nothing to commit
+Jennifers-MacBook-Pro:basic-repo jennifercortes$ pwd
+/Users/jennifercortes/Desktop/coding dojo/ASSIGNMENTS/basic-repo
+Jennifers-MacBook-Pro:basic-repo jennifercortes$ touch index.html
+Jennifers-MacBook-Pro:basic-repo jennifercortes$ touch style.css
+Jennifers-MacBook-Pro:basic-repo jennifercortes$ git commit -"new repo with blank files"
+error: unknown switch `w'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit hook
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+Jennifers-MacBook-Pro:basic-repo jennifercortes$ git remote add origin https://github.com/jennuinecode/basic-repo.git
+Jennifers-MacBook-Pro:basic-repo jennifercortes$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/jennuinecode/basic-repo.git'
+Jennifers-MacBook-Pro:basic-repo jennifercortes$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.html
+	style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+Jennifers-MacBook-Pro:basic-repo jennifercortes$ git add .
+Jennifers-MacBook-Pro:basic-repo jennifercortes$ git commit -m "new repo with balnk files"
+[master (root-commit) b183794] new repo with balnk files
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 style.css
+Jennifers-MacBook-Pro:basic-repo jennifercortes$ git push origin master
+Username for 'https://github.com': jennuinecode
+Password for 'https://jennuinecode@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 243 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/jennuinecode/basic-repo.git
+ * [new branch]      master -> master
+Jennifers-MacBook-Pro:basic-repo jennifercortes$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+	modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Jennifers-MacBook-Pro:basic-repo jennifercortes$ git add .
+Jennifers-MacBook-Pro:basic-repo jennifercortes$ git commit -m "added basic html template and css"
+[master aacf060] added basic html template and css
+ 2 files changed, 13 insertions(+)
+Jennifers-MacBook-Pro:basic-repo jennifercortes$ git push origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 412 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/jennuinecode/basic-repo.git
+   b183794..aacf060  master -> master
+Jennifers-MacBook-Pro:basic-repo jennifercortes$ 
